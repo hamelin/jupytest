@@ -2,3 +2,4 @@ jupyter
 nbconvert
 nbformat
 ansicolors
+pygments
