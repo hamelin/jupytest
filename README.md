@@ -55,7 +55,7 @@ Import `jupytest` in a notebook, then run `jupytest?` to get an index.
 ## Development
 
 The whole package is implemented through notebook
-[jupytest.ipynb](jupytest.ipynb). The unit and integration tests of the
+[`jupytest.ipynb`](jupytest.ipynb). The unit and integration tests of the
 package are inline to this notebook. Its full execution renders the module file
 `jupytest.py` that is packaged for distribution through PyPI and convenience
 of importation. The packages `jupytest` depends on for its usage are listed in
