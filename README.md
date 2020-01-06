@@ -66,3 +66,10 @@ the Jupytest notebook, run from a shell
 ```
 pip install -r requirements.txt -r requirements_dev.txt
 ```
+
+Then ensure that the `jupytest` module can be imported from the project's
+directory:
+
+```
+pip install -e .
+```
