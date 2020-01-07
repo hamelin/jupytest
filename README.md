@@ -58,18 +58,14 @@ The whole package is implemented through notebook
 [`jupytest.ipynb`](jupytest.ipynb). The unit and integration tests of the
 package are inline to this notebook. Its full execution renders the module file
 `jupytest.py` that is packaged for distribution through PyPI and convenience
-of importation. The packages `jupytest` depends on for its usage are listed in
-[`requirements.txt`](requirements.txt); the development dependencies are in
+of importation.
+
+The packages `jupytest` depends on for its usage are set up directly in the
+[`setup.py`](setup.py) script; the development dependencies are in
 [`requirements_dev.txt`](requirements_dev.txt). To set oneself up for opening
-the Jupytest notebook, run from a shell
-
-```
-pip install -r requirements.txt -r requirements_dev.txt
-```
-
-Then ensure that the `jupytest` module can be imported from the project's
-directory:
+the Jupytest notebook, run from a shell the following two commands:
 
 ```
 pip install -e .
+pip install -r requirements_dev.txt
 ```

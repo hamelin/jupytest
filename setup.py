@@ -21,9 +21,6 @@ Find out more on `jupytest <https://github.com/hamelin/jupytest>`_'s Github
 repository.
 """
 
-with open("requirements.txt", "r", encoding="utf-8") as f:
-    requirements = [line.strip() for line in f.readlines()]
-
 cp = run(["git", "describe", "--always"], stdout=PIPE, encoding="utf-8")
 if cp.returncode != 0:
     print("Problem while gathering software version. Abort.")
@@ -39,7 +36,7 @@ setup(
     author_email="benoit@benoithamelin.com",
     description="Unit and integration testing in a Jupyter notebook",
     long_description=long_description,
-    install_requires=requirements,
+    install_requires=["jupyter", "ansicolors", "pygments"],
     url="https://github.com/hamelin/jupytest",
     python_requires=">=3.6"
 )
