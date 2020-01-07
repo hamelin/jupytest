@@ -1,3 +1,4 @@
 nbformat
 flake8
 pycodestyle_magic
+nbconvert
