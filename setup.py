@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-from subprocess import run, PIPE
 import sys
 
 
@@ -21,16 +20,9 @@ Find out more on `jupytest <https://github.com/hamelin/jupytest>`_'s Github
 repository.
 """
 
-cp = run(["git", "describe", "--always"], stdout=PIPE, encoding="utf-8")
-if cp.returncode != 0:
-    print("Problem while gathering software version. Abort.")
-    sys.exit(cp.returncode)
-version = cp.stdout.strip()
-print("Version:", version)
-
 setup(
     name="jupytest",
-    version=version,
+    version="1.0.1",
     packages=find_packages(),
     author="Benoit Hamelin",
     author_email="benoit@benoithamelin.com",
