@@ -31,7 +31,7 @@ if __name__ == '__main__':
             sys.exit(101)
 
         run(["git", "add", "setup.py"]).check_returncode()
-        run(["git", "commit", "--sign", f'--message="Bump version to {version_new}"']).check_returncode()
+        run(["git", "commit", "--sign", "--message", f"Bump version to {version_new}"]).check_returncode()
         print("File setup.py updated.")
     except Exception as err:
         print("Problem while committing the version change. Undo and abort.")
@@ -39,7 +39,7 @@ if __name__ == '__main__':
         sys.exit(getattr(err, "returncode", 102))
 
     try:
-        run(["git", "tag", "--sign", f'--message="Version {version_new}"', version_new]).check_returncode()
+        run(["git", "tag", "--sign", "--message", f"Version {version_new}", version_new]).check_returncode()
         print("New version tagged in.")
     except Exception as err:
         print("Problem while adding the signed tag for the new version. Undo and abort.")
