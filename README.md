@@ -66,6 +66,6 @@ The packages `jupytest` depends on for its usage are set up directly in the
 the Jupytest notebook, run from a shell the following two commands:
 
 ```
+pip install -r dev/requirements.txt
 pip install -e .
-pip install -r requirements_dev.txt
 ```

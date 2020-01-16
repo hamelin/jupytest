@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 import sys
 
 
@@ -23,11 +23,12 @@ repository.
 setup(
     name="jupytest",
     version="1.0.2",
-    packages=find_packages(),
+    package_dir={"jupytest": ""},
     author="Benoit Hamelin",
     author_email="benoit@benoithamelin.com",
     description="Unit and integration testing in a Jupyter notebook",
     long_description=long_description,
+    license="BSD 3-Clause"
     install_requires=["jupyter", "ansicolors", "pygments"],
     url="https://github.com/hamelin/jupytest",
     python_requires=">=3.6"
