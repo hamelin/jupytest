@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Jupytest module is generated from the eponymous notebook.
-jupytest.py
+jupytest
