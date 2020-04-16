@@ -22,7 +22,7 @@ repository.
 
 setup(
     name="jupytest",
-    version="2.0.2",
+    version="3.0",
     packages=find_packages(),
     author="Benoit Hamelin",
     author_email="benoit@benoithamelin.com",
